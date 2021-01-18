@@ -1,0 +1,413 @@
+<!Doctype html>
+<html>
+<body style="background:white;">
+<h1><center><b><u>Python</u></b><center></h1>
+<style>
+h2{ color: Blue;}
+body{
+  min-width:290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+#navbar{
+  position:fixed;
+  min-width:70px;
+  left:0px;
+  width:160px;
+  height:70%;
+  <!-- border-right:solid; -->
+  border-color:rgba(0,22,22,0.4)
+}
+a li:hover {
+    background-color: black!important;
+    color:white!important;
+}
+#main-doc header{
+  text-align:left;
+  margin:0px;
+}
+#main-doc{
+  position: absolute;
+  margin-left:150px;
+  padding:20px;
+  margin-bottom:110px;
+}
+section article{
+  color: #4d4e53;
+  margin:15px;
+  font-size:1em;
+}
+section li {
+  margin:15px 0px 0px 20px;
+}
+header{
+  text-align:center;
+  font-weight:bold;
+  font-size: 1.6em;
+  <!-- background-color: black; -->
+  color: white;
+  margin: 0.5em 0em;
+}
+#navbar ul{
+  height:88%;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#navbar li{
+  color: #4d4e53;
+  padding:8px;
+  list-style: none;
+  position:relative;
+  width:100%; 
+}
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+  #navbar ul{
+  border:1px solid;
+    height:207px;
+  }
+    #navbar{
+      background-color:white;
+      position:absolute;
+      top:0;
+      padding:0;
+      margin: 0;
+      width:100%;
+      max-height:275px;
+      border:none;
+      z-index:1;
+      border-bottom:2px solid;
+    }
+	code{
+  display:block;
+    text-align: left;
+  white-space: pre;
+  position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color:#f7f7f7;
+  padding:15px;
+  margin:10px;
+    border-radius:5px;
+}
+  #main-doc{
+    position: relative;
+    margin-left:0px;
+    margin-top:270px;
+  }
+  #main-doc section {
+/*     padding-top: 240px; */
+  }
+}
+</style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-12 col-xs-12">
+            <nav id="navbar">
+                <ul class="nav nav-pills nav-stacked">
+				<nav id="navbar">
+                <header>Content</header>
+                <ul class="nav nav-pills nav-stacked">
+                    <a class="nav-link" href="#Introduction"rel="internal">
+                        <li>Introduction</li>
+                    </a>
+                    <a class="nav-link" href="#Why_python" rel="internal">
+                        <li>Why Python</li>
+                    </a>
+                    <a class="nav-link" href="#Hello_world" rel="internal">
+                        <li>Hello world</li>
+                    </a>
+                    <a class="nav-link" href="#Data_types" rel="internal">
+                        <li>Data types</li>
+                    </a>
+					 <a class="nav-link" href="#String" rel="internal">
+                        <li>Strings</li>
+                    </a>
+                    <a class="nav-link" href="#tuple" rel="internal">
+                        <li>Tuples</li>
+                    </a>
+					<a class="nav-link" href="#list" rel="internal">
+                        <li>Lists</li>
+                    </a>
+					<a class="nav-link" href="#Set" rel="internal">
+                        <li>Sets</li>
+                    </a>
+					<a class="nav-link" href="#dictionary" rel="internal">
+                        <li>Dictionaries</li>
+                    </a>
+                    <a class="nav-link" href="#if...else_statement" rel="internal">
+                        <li>if...else statement</li>
+                    </a>
+                    <a class="nav-link" href="#while_statement" rel="internal">
+                        <li>while Loop</li>
+                    </a>
+					<a class="nav-link" href="#for_loop" rel="internal">
+                        <li>For Loop</li>
+                    </a>
+                    <a class="nav-link" href="#Function_declarations" rel="internal">
+                        <li>Function</li>
+                    </a>
+                    <a class="nav-link" href="#Reference" rel="internal">
+                        <li>Reference</li>
+                    </a>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="col-md-10 col-sm-12 col-xs-12">
+            <main id="main-doc">
+                <section class="main-section" id="Introduction">
+                    <header>Introduction</header>
+                    <article>
+                        <p>Python is a widely used general-purpose, high level programming language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code..</p>
+
+                        <p>It is used for:</p>
+						<ul>
+						<li>web development (server-side)</li>
+						<li>software development</li>
+						<li>mathematics</li>
+						</ul>
+
+                        
+                        </article>
+                </section>
+                <section class="main-section" id="Why_python">
+                    <header>Why Python</header>
+					<article>
+					<ul>
+					<li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+					<li>Python has a simple syntax similar to the English language.</li>
+					<li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+					<li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+					<li>Python can be treated in a procedural way, an object-oriented way or a functional way.
+					</ul>
+                    </article>
+                </section>
+				 <section class="main-section" id="features_of_Python">
+                    <header>Features of Python</header>
+					<article>
+					<p>Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Python was designed for readability, and has some similarities to the English language with influence from mathematics.
+Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.The biggest strength of Python is huge collection of standard library which can be used for the following:</p>
+					<ul>
+					<li>Machine Learning</li>
+					<li>GUI Applications (like Kivy, Tkinter, PyQt etc. )</li>
+					<li>Web frameworks like Django (used by YouTube, Instagram, Dropbox)</li>
+					<li>Image processing (like OpenCV, Pillow)</li>
+					<li>Web scraping (like Scrapy, BeautifulSoup, Selenium)</li>
+					<li>Test frameworks</li>
+					<li>Multimedia</li>
+					<li>Scientific computing</li>
+					<li>Text processing</li>
+					</ul>
+                    </article>
+                </section>
+				
+                <section class="main-section" id="Hello_world">
+                    <header>Hello world</header>
+                    <article>
+                        To get started with writing Python, write your first "Hello world"
+                        Python
+                        code:
+                        <p>print("Hello World")</p>
+
+                    </article>
+                </section>
+                <section class="main-section" id="Data_types">
+                    <header>Data types</header>
+                    <article>
+                        <p>In programming, data type is an important concept.
+						Variables can store data of different types, and different types can do different things.
+						Python has the following data types built-in by default, in these categories:</p>
+						<li>Text Type:	str</li>
+						<li>Numeric Types:	int, float, complex</li>
+						<li>Sequence Types:	list, tuple, range</li>
+						<li>Mapping Type:	dict</li>
+						<li>Set Types:	set, frozenset</li>
+						<li>Boolean Type:	bool</li>
+						<li>Binary Types:	bytes, bytearray, memoryview</li>
+						<p>You can get the data type of any object by using the type() function:<p>
+						<code>x = 5
+							 <p>print(type(x))</p>
+						</code>
+                    </article>
+                </section>
+				<section class="main-section" id="String">
+                    <header>String</header>
+                    <article>
+							<p>Assigning a string to a variable is done with the variable name followed by an equal sign and the string:
+							<p>Example</p>
+							<code>a = "Hello"
+								  <p>print(a)</p>
+							</code>
+							<p>You can return a range of characters by using the slice syntax.</p>
+							<p>Specify the start index and the end index, separated by a colon, to return a part of the string.</p>
+							<code>b = "Hello, World!"
+								 <p>print(b[2:5])</p>
+							</code>
+					</article>
+				</section>
+				<section class="main-section" id="tuple">
+                    <header>Tuple</header>
+                    <article>
+						<p>	Tuples are used to store multiple items in a single variable.</p>
+						<p>	Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.</p>
+						<p>	A tuple is a collection which is ordered and unchangeable.</p>
+						<p>	Tuples are written with round brackets.</p>
+						<p>Example</p>
+						<p>Create a Tuple:</p>
+						<code>tuple = ("apple", "banana", "cherry")
+							<p>print(tuple)</p>
+						</code>
+					</article>
+					</section>
+					<section class="main-section" id="list">
+                    <header>List</header>
+                    <article>
+						<p>	Lists are used to store multiple items in a single variable.</p>
+						<p>	Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.</p>
+						<p>	Lists are created using square brackets:</p>
+						<p>Example</p>
+						<p>Create a List:</>
+						<code>list = ["apple", "banana", "cherry"]
+						<p>print(list)</p>
+						</code>
+					</article>
+					</section>
+					<section class="main-section" id="Set">
+                    <header>Sets</header>
+                    <article>
+						<p>	Sets are used to store multiple items in a single variable.</p>
+						<p>	Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.</p>
+						<p>	A set is a collection which is both unordered and unindexed.</p>
+						<p>	Sets are written with curly brackets.</p>
+						<p>Example</p>
+						<p>Create a Set:</>
+						<code>set = {"apple", "banana", "cherry"}
+						<p>print(set)</p>
+						</code>
+					</article>
+				</section>
+				<section class="main-section" id="dictionary">
+                    <header>Dictionaries</header>
+                    <article>	
+							<p>Dictionaries are used to store data values in key:value pairs.</p>
+							<p>A dictionary is a collection which is unordered, changeable and does not allow duplicates.</p>
+							<p>Dictionaries are written with curly brackets, and have keys and values:</p>
+							<p>Example</p>
+							<p>Create and print a dictionary:</p>
+							<code>dict = {"brand": "Ford","model": "Mustang","year": 1964}
+						<p>print(dict)</p>
+							</code>
+					</article>
+				</section>
+                <section class="main-section" id="if...else_statement">
+                    <header>if...else statement</header>
+                    <article>
+                        <p>Python supports the usual logical conditions from mathematics:</p>
+						<li>Equals: a == b</li>
+						<li>Not Equals: a != b</li>
+						<li>Less than: a < b</li>
+						<li>Less than or equal to: a <= b</li>
+						<li>Greater than: a > b</li>
+						<li>Greater than or equal to: a >= b</li>
+						<p>These conditions can be used in several ways, most commonly in "if statements" and loops.
+						An "if statement" is written by using the if keyword.</p>
+						<code>a = 33
+							 <p> b = 200</p>
+							<p>	if b > a:</p>
+							<p>&nbsp;&nbsp print("b is greater than a")</p>
+							</code>
+						<p>The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition".</p>
+						<code>a = 33
+							<p>b = 33</p>
+							<p>if b > a:<>
+							<p>&nbsp;&nbsp	print("b is greater than a")</p>
+							<p>elif a == b:</p>
+							<p>&nbsp;&nbsp print("a and b are equal")</p>
+							</code>
+						</article>
+                </section>
+                <section class="main-section" id="while_statement">
+                    <header>while loop</header>
+                    <article>
+                       <p>The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.
+
+						We generally use this loop when we don't know the number of times to iterate beforehand.</p>
+						<code>sum=0
+								<p>n = 10</p>
+								<p>i = 1</p>
+								<p>while i <= n:</p>
+								<p>&nbsp;&nbsp sum = sum + i</p>
+								<p>&nbsp;&nbsp i = i+1 </p> 
+								<p>&nbsp;&nbsp print("The sum is", sum)</p>
+                    </code>
+					<p>In the above program, the test expression will be True as long as our counter variable i is less than or equal to n (10 in our program).
+						We need to increase the value of the counter variable in the body of the loop. This is very important (and mostly forgotten). Failing to do so will result in an infinite loop
+						Finally, the result is displayed.</p>
+					</article>
+                </section>
+				  <section class="main-section" id="for_loop">
+                    <header>For Loop</header>
+                    <article>
+							<p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+							<p>This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
+							<p>With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+							<p>Example</p>
+							<p>Print each fruit in a fruit list:</p>
+							<code>fruits = ["apple", "banana", "cherry"]
+							<p>for x in fruits:</p>
+							<p>&nbsp;&nbsp print(x)</p>
+							</code>
+					</article>
+				</section>
+                <section class="main-section" id="Function_declarations">
+                    <header>Function declarations</header>
+                    <article>
+                       A function is a block of code which only runs when it is called.
+					   You can pass data, known as parameters, into a function.
+					   A function can return data as a result.
+
+                        <p>In Python a function is defined using the def keyword:</p>
+						<li>Following is the example without parameter</li>
+                        <code>def square():
+								 <p>&nbsp;&nbsp num=input("Enter number")
+							     <p>&nbsp;&nbsp result=num*num</p>
+							     <p>&nbsp;&nbsp print(result)</p>
+							 <p>square()</p>
+								</code>
+                        <li>Example with return type but without parameter</li>
+						<code>def add():
+						<p>&nbsp;&nbsp n1=int(input("num: "))</p>
+						<p>&nbsp;&nbsp n2=int(input("num: "))</p>
+						<p>&nbsp;&nbsp sum=n1+n2</p>
+						<p>&nbsp;&nbsp return sum</p>
+						<p>result=add()</p>
+						<p>print(result)</p>
+						</code>
+						<li>Example with return type and parameter</li>
+						<code>
+						<p>def find_sqr(n1):</p>
+						<p>&nbsp;&nbsp return n1*n1</p>
+						</code>
+                    </article>
+                </section>
+                <section class="main-section" id="Reference">
+                    <header>Reference</header>
+                    <article>
+                        <h3><marquee>Following are the books which are essential for undestanding basic concept of Python and one should not miss reading those books....</marquee></h3>
+						<a href="2python.pdf"><img src="python2.jpg"></a>
+						<a href="python.pdf"><img src="python1.jfif"></a>
+						<a href="python3.pdf"><img src="python3.jpg"></a>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
